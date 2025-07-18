@@ -23,6 +23,6 @@ use AndreInocenti\SocialMediaUrlIdExtractor\SocialMediaUrlIdExtractor;
 
 // Extract ID from a URL
 $result = (new SocialMediaUrlIdExtractor())->extract('https://www.instagram.com/p/ABC123XYZ/');
-echo $result->getId(); // Outputs: ABC123XYZ
-echo $result->getProvider(); // Outputs: Instagram
-echo $result->getResourceType(); // Outputs: post
+echo $result->id; // Outputs: ABC123XYZ
+echo $result->provider; // Outputs: Instagram
+echo $result->resourceType; // Outputs: post
