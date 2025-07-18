@@ -4,8 +4,49 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cda018229454a7e7441db6e6840c0441",
-    "packages": [],
+    "content-hash": "4fa1ca97d63de92f82e86f874493f262",
+    "packages": [
+        {
+            "name": "andreinocenti/php-social-media-url-validator",
+            "version": "v1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreinocenti/php-social-media-url-validator.git",
+                "reference": "0801e1ef9c35558a54219b8b151a2d33bd26b8ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreinocenti/php-social-media-url-validator/zipball/0801e1ef9c35558a54219b8b151a2d33bd26b8ba",
+                "reference": "0801e1ef9c35558a54219b8b151a2d33bd26b8ba",
+                "shasum": ""
+            },
+            "require-dev": {
+                "pestphp/pest": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "AndreInocenti\\SocialMediaUrlValidator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andre Inocenti",
+                    "email": "andreinocenti@gmail.com"
+                }
+            ],
+            "description": "PHP library for validating generic URLs and specific social media URLs, with ID extraction.",
+            "support": {
+                "issues": "https://github.com/andreinocenti/php-social-media-url-validator/issues",
+                "source": "https://github.com/andreinocenti/php-social-media-url-validator/tree/v1.0.4"
+            },
+            "time": "2025-07-18T20:10:52+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "brianium/paratest",
@@ -3621,7 +3662,9 @@
     "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
+    "platform": {
+        "php": "^8.1"
+    },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
