@@ -19,7 +19,7 @@ class SocialMediaUrlIdExtractor
      * Extracts the ID from a social media URL.
      *
      * @param string $url The social media URL.
-     * @return string|null The extracted ID or null if not found.
+     * @return SocialMediaUrlIdExtractorDto|null The extracted ID or null if not found.
      */
     public function extract(string $url): ?SocialMediaUrlIdExtractorDto
     {
