@@ -8,20 +8,20 @@
     "packages": [
         {
             "name": "andreinocenti/php-social-media-url-validator",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreinocenti/php-social-media-url-validator.git",
-                "reference": "0801e1ef9c35558a54219b8b151a2d33bd26b8ba"
+                "reference": "58f0d6a4f75649a4385bb20ec1340abf5ca1fb1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreinocenti/php-social-media-url-validator/zipball/0801e1ef9c35558a54219b8b151a2d33bd26b8ba",
-                "reference": "0801e1ef9c35558a54219b8b151a2d33bd26b8ba",
+                "url": "https://api.github.com/repos/andreinocenti/php-social-media-url-validator/zipball/58f0d6a4f75649a4385bb20ec1340abf5ca1fb1e",
+                "reference": "58f0d6a4f75649a4385bb20ec1340abf5ca1fb1e",
                 "shasum": ""
             },
             "require-dev": {
-                "pestphp/pest": "^1.0"
+                "pestphp/pest": "^2.0"
             },
             "type": "library",
             "autoload": {
@@ -42,9 +42,9 @@
             "description": "PHP library for validating generic URLs and specific social media URLs, with ID extraction.",
             "support": {
                 "issues": "https://github.com/andreinocenti/php-social-media-url-validator/issues",
-                "source": "https://github.com/andreinocenti/php-social-media-url-validator/tree/v1.0.4"
+                "source": "https://github.com/andreinocenti/php-social-media-url-validator/tree/v1.0.5"
             },
-            "time": "2025-07-18T20:10:52+00:00"
+            "time": "2025-07-18T22:39:10+00:00"
         }
     ],
     "packages-dev": [
