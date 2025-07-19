@@ -25,9 +25,9 @@ class FacebookExtractor extends AbstractExtractor implements PlatformExtractorIn
             case PlatformsCategoriesEnum::POST:
                 return [
                     // /pagename/posts/12345
-                    '~^(?:https?://)?(?:www\.|m\.)?facebook\.com/[^/]+/posts/(\d+)(?:/|\b)(?:\?.*)?$~i',
+                    '~^(?:https?://)?(?:www\.|m\.)?facebook\.com/[^/]+/posts/([A-Za-z0-9_-]+)(?:/|\b)(?:\?.*)?$~i',
                     // story.php?story_fbid=…
-                    '~^(?:https?://)?(?:www\.|m\.)?facebook\.com/story\.php\?story_fbid=(\d+)&id=\d+(?:/|\b)(?:\?.*)?$~i',
+                    '~^(?:https?://)?(?:www\.|m\.)?facebook\.com/story\.php\?story_fbid=(\d+)&id=\d+/?(?:[?&].*)?$~i',
                 ];
             case PlatformsCategoriesEnum::VIDEO:
                 return [
