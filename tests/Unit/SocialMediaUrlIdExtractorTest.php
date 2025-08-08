@@ -20,6 +20,8 @@ it('valid cases return correct DTO', function () {
         ['https://youtu.be/VIDEO123', 'VIDEO123', PlatformsEnum::YOUTUBE, PlatformsCategoriesEnum::VIDEO],
         ['https://tiktok.com/@user/video/1234567890', '1234567890', PlatformsEnum::TIKTOK, PlatformsCategoriesEnum::VIDEO],
         ['https://vm.tiktok.com/AbCdEf/', 'AbCdEf', PlatformsEnum::TIKTOK, PlatformsCategoriesEnum::VIDEO],
+        ['https://www.youtube.com/@MyClappy', 'MyClappy', PlatformsEnum::YOUTUBE, PlatformsCategoriesEnum::CHANNEL],
+        ['https://www.youtube.com/@canaldigplay/', 'canaldigplay', PlatformsEnum::YOUTUBE, PlatformsCategoriesEnum::CHANNEL],
     ];
 
     foreach ($cases as [$url, $id, $platform, $resource]) {
