@@ -9,19 +9,31 @@ class TikTokExtractor extends AbstractExtractor implements PlatformExtractorInte
 {
     protected function getPatterns(PlatformsCategoriesEnum $resourceType): array
     {
-        $suffix = '/?(?:\\?.*)?$';
+        // barra final opcional + query/fragment opcionais
+        $suffix = '/?(?:[?#].*)?$';
+
         switch ($resourceType) {
             case PlatformsCategoriesEnum::VIDEO:
                 return [
-                    "~^(?:https?://)?(?:www\\.)?tiktok\\.com/@[^/]+/video/([A-Za-z0-9_-]+)" . $suffix . "~i",
+                    // Canônico: /@user/video/{id}
+                    "~^(?:https?://)?(?:www\\.)?tiktok\\.com/@[^/]+/video/([0-9A-Za-z_-]+)" . $suffix . "~i",
+
+                    // Encurtados
                     "~^(?:https?://)?vm\\.tiktok\\.com/([A-Za-z0-9_-]+)" . $suffix . "~i",
-                    "~^(?:https?://)?m\\.tiktok\\.com/v/([A-Za-z0-9_-]+)" . $suffix . "~i",
+                    "~^(?:https?://)?vt\\.tiktok\\.com/([A-Za-z0-9_-]+)" . $suffix . "~i",
+                    "~^(?:https?://)?(?:www\\.)?tiktok\\.com/t/([A-Za-z0-9_-]+)" . $suffix . "~i",
+
+                    // Mobile legado: /v/{id}.html
+                    "~^(?:https?://)?m\\.tiktok\\.com/v/([0-9]+)\\.html(?:[?#].*)?$~i",
+
+                    // Embeds: /embed/{id} e /embed/v2/{id}
+                    "~^(?:https?://)?(?:www\\.)?tiktok\\.com/embed/(?:v2/)?([0-9]+)" . $suffix . "~i",
                 ];
 
             case PlatformsCategoriesEnum::USER:
             case PlatformsCategoriesEnum::PROFILE:
                 return [
-                    "~^(?:https?://)?(?:www\\.)?tiktok\\.com/@([A-Za-z0-9._]+)" . $suffix . "~i"
+                    "~^(?:https?://)?(?:www\\.)?tiktok\\.com/@([A-Za-z0-9._]+)" . $suffix . "~i",
                 ];
 
             default:
