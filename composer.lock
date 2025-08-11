@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "andreinocenti/php-social-media-url-validator",
-            "version": "v1.0.7",
+            "version": "v1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andreinocenti/php-social-media-url-validator.git",
-                "reference": "fc11eb9586ab4664bdf90ceaab5870f2e4c3deec"
+                "reference": "240a9767e4318c2f60bebe6639fa3ba6baab41f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andreinocenti/php-social-media-url-validator/zipball/fc11eb9586ab4664bdf90ceaab5870f2e4c3deec",
-                "reference": "fc11eb9586ab4664bdf90ceaab5870f2e4c3deec",
+                "url": "https://api.github.com/repos/andreinocenti/php-social-media-url-validator/zipball/240a9767e4318c2f60bebe6639fa3ba6baab41f8",
+                "reference": "240a9767e4318c2f60bebe6639fa3ba6baab41f8",
                 "shasum": ""
             },
             "require-dev": {
@@ -42,9 +42,9 @@
             "description": "PHP library for validating generic URLs and specific social media URLs, with ID extraction.",
             "support": {
                 "issues": "https://github.com/andreinocenti/php-social-media-url-validator/issues",
-                "source": "https://github.com/andreinocenti/php-social-media-url-validator/tree/v1.0.7"
+                "source": "https://github.com/andreinocenti/php-social-media-url-validator/tree/v1.0.8"
             },
-            "time": "2025-08-08T22:14:22+00:00"
+            "time": "2025-08-11T20:48:34+00:00"
         }
     ],
     "packages-dev": [
@@ -2544,23 +2544,23 @@
         },
         {
             "name": "sebastian/recursion-context",
-            "version": "5.0.0",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/recursion-context.git",
-                "reference": "05909fb5bc7df4c52992396d0116aed689f93712"
+                "reference": "47e34210757a2f37a97dcd207d032e1b01e64c7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/05909fb5bc7df4c52992396d0116aed689f93712",
-                "reference": "05909fb5bc7df4c52992396d0116aed689f93712",
+                "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/47e34210757a2f37a97dcd207d032e1b01e64c7a",
+                "reference": "47e34210757a2f37a97dcd207d032e1b01e64c7a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^10.0"
+                "phpunit/phpunit": "^10.5"
             },
             "type": "library",
             "extra": {
@@ -2595,15 +2595,28 @@
             "homepage": "https://github.com/sebastianbergmann/recursion-context",
             "support": {
                 "issues": "https://github.com/sebastianbergmann/recursion-context/issues",
-                "source": "https://github.com/sebastianbergmann/recursion-context/tree/5.0.0"
+                "security": "https://github.com/sebastianbergmann/recursion-context/security/policy",
+                "source": "https://github.com/sebastianbergmann/recursion-context/tree/5.0.1"
             },
             "funding": [
                 {
                     "url": "https://github.com/sebastianbergmann",
                     "type": "github"
+                },
+                {
+                    "url": "https://liberapay.com/sebastianbergmann",
+                    "type": "liberapay"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/sebastianbergmann",
+                    "type": "thanks_dev"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/sebastian/recursion-context",
+                    "type": "tidelift"
                 }
             ],
-            "time": "2023-02-03T07:05:40+00:00"
+            "time": "2025-08-10T07:50:56+00:00"
         },
         {
             "name": "sebastian/type",
