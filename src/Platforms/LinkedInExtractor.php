@@ -27,7 +27,10 @@ class LinkedInExtractor extends AbstractExtractor implements PlatformExtractorIn
             case PlatformsCategoriesEnum::COMPANY:
                 return [
                     // /company/{slug} — mesmo conjunto unicode
-                    "~^(?:https?://)?(?:www\\.)?linkedin\\.com/company/([%\\p{L}\\p{N}_-]+)" . $suffix . "~iu",
+                    "~^(?:https?://)?(?:[\\w-]+\\.)?linkedin\\.com/company/([%\\p{L}\\p{N}_-]+)"
+                    . "(?:/(?:about|people|posts|jobs|life|updates|insights|events|services)"
+                    . "(?:/[%\\p{L}\\p{N}_-]+)?)?"   // opcional: um segmento extra após a aba
+                    . "/?(?:[?#].*)?$~iu"
                 ];
 
             case PlatformsCategoriesEnum::POST:
