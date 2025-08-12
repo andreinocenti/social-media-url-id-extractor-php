@@ -40,6 +40,8 @@ dataset('li-company', [
     'company no www'   => ['https://linkedin.com/company/examplecorp',                    'examplecorp'],
     'company query'    => ['https://www.linkedin.com/company/examplecorp?trk=public',     'examplecorp'],
     'about'            => ['https://www.linkedin.com/company/kakaka/about/',               'kakaka'],
+    'accent'            => ['https://www.linkedin.com/company/kakaka/', 'kakaka'],
+    'showcase'            => ['https://www.linkedin.com/showcase/kakaka/', 'kakaka'],
 ]);
 
 // activity (feed/update/urn:li:activity:<id>)

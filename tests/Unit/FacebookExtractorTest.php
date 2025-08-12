@@ -18,6 +18,8 @@ dataset('fb-profile-vanity', [
     'subdomain m'        => ['https://m.facebook.com/Example.Page',                        'Example.Page'],
     'subdomain mbasic'   => ['https://mbasic.facebook.com/Example.Page?ref=bookmarks',     'Example.Page'],
     'dots and caps'      => ['https://www.facebook.com/Ex.Ample.Page/',                    'Ex.Ample.Page'],
+    'web'                => ['https://web.facebook.com/pagename',                         'pagename'],
+    'ptbr'                => ['https://pt-br.facebook.com/pagename/',              'pagename'],
 ]);
 
 dataset('fb-profile-numeric', [

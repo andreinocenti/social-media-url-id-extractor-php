@@ -11,7 +11,8 @@ class FacebookExtractor extends AbstractExtractor implements PlatformExtractorIn
     {
         // Sufixo: barra final opcional + query/fragment opcionais (inclui &, #)
         $suffix = '(?:/)?(?:[?#&].*)?$';
-        $sub    = '(?:www\.|m\.|mbasic\.)?';
+        // $sub    = '(?:www\.|m\.|mbasic\.)?';
+        $sub = '(?:[\w-]+\.)?';
 
         switch ($resourceType) {
             case PlatformsCategoriesEnum::USER:
