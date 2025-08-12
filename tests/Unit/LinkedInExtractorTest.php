@@ -17,7 +17,7 @@ dataset('li-profiles-in', [
     'www + slash'      => ['https://www.linkedin.com/in/public-user-123/',                'public-user-123'],
     'with query'       => ['https://linkedin.com/in/public-user-123?test=123&asda=234',   'public-user-123'],
     'http scheme'      => ['http://linkedin.com/in/public-user-123',                      'public-user-123'],
-    "complex slug"    => ['https://www.linkedin.com/in/kakaka-asdadj%C3%B3-8302652b/',  'kakaka-asdad%C3%B3-8302652b'],
+    "complex slug"    => ['https://www.linkedin.com/in/kakaka-asdadj%C3%B3-8302652b/',  'kakaka-asdadj%C3%B3-8302652b'],
 ]);
 
 // legacy /pub/{slug}
@@ -105,7 +105,6 @@ describe('LinkedIn', function () {
     //
     // NEGATIVOS — deve lançar InvalidArgumentException
     //
-
     test('throws on wrong category or malformed LinkedIn URL', function (string $url, Cat $type) {
         $this->expectException(\InvalidArgumentException::class);
         $this->extractor->extractId($url, $type);
